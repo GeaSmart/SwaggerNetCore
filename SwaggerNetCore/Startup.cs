@@ -36,8 +36,9 @@ namespace test2307
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("default")));
 
+            //Configuración de los servicios
             services.AddSwaggerGen(config => 
-                config.SwaggerDoc("V1",
+                config.SwaggerDoc("v1",
                     new Microsoft.OpenApi.Models.OpenApiInfo() //Swashbuckle.AspNetCore.Swagger.info() se usa en versiones anteriores
                     {
                         Title = "Ejemplo de swagger"
@@ -63,6 +64,12 @@ namespace test2307
             {
                 endpoints.MapControllers();
             });
+
+            //Configuración de middleware
+            app.UseSwagger();
+            app.UseSwaggerUI(config => 
+                config.SwaggerEndpoint("/swagger/v1/swagger.json","API SWAGGER!")    
+            );
         }
     }
 }
