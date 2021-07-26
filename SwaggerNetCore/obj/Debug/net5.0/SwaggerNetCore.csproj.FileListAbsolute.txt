@@ -189,3 +189,4 @@ D:\Repos\SwaggerNetCore\SwaggerNetCore\obj\Debug\net5.0\SwaggerNetCore.dll
 D:\Repos\SwaggerNetCore\SwaggerNetCore\obj\Debug\net5.0\ref\SwaggerNetCore.dll
 D:\Repos\SwaggerNetCore\SwaggerNetCore\obj\Debug\net5.0\SwaggerNetCore.pdb
 D:\Repos\SwaggerNetCore\SwaggerNetCore\obj\Debug\net5.0\SwaggerNetCore.genruntimeconfig.cache
+C:\Users\Gerson.Azabache\source\repos\SwaggerNetCore\SwaggerNetCore\bin\Debug\net5.0\SwaggerNetCore.xml

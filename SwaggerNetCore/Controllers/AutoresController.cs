@@ -19,12 +19,21 @@ namespace test2307.Controllers
             this.context = context;
         }
 
+        /// <summary>
+        /// Este método trae todos los autores
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<List<Autor>>> Get()
         {
             return await context.Autor.Include(x=>x.Libros).ToListAsync();
         }
 
+        /// <summary>
+        /// Este método inserta autores
+        /// </summary>
+        /// <param name="autor">Inserte autor</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult> Post(Autor autor)
         {            

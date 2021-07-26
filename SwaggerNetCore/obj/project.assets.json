@@ -5689,19 +5689,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gazabache\\.nuget\\packages\\": {}
+    "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\SwaggerNetCore\\SwaggerNetCore\\SwaggerNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\Gerson.Azabache\\source\\repos\\SwaggerNetCore\\SwaggerNetCore\\SwaggerNetCore.csproj",
       "projectName": "SwaggerNetCore",
-      "projectPath": "D:\\Repos\\SwaggerNetCore\\SwaggerNetCore\\SwaggerNetCore.csproj",
-      "packagesPath": "C:\\Users\\gazabache\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\SwaggerNetCore\\SwaggerNetCore\\obj\\",
+      "projectPath": "C:\\Users\\Gerson.Azabache\\source\\repos\\SwaggerNetCore\\SwaggerNetCore\\SwaggerNetCore.csproj",
+      "packagesPath": "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gerson.Azabache\\source\\repos\\SwaggerNetCore\\SwaggerNetCore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gazabache\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gerson.Azabache\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

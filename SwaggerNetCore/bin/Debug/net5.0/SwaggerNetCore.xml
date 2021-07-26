@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerNetCore</name>
+    </assembly>
+    <members>
+        <member name="M:test2307.Controllers.AutoresController.Get">
+            <summary>
+            Este método trae todos los autores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:test2307.Controllers.AutoresController.Post(test2307.Entities.Autor)">
+            <summary>
+            Este método inserta autores
+            </summary>
+            <param name="autor">Inserte autor</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
