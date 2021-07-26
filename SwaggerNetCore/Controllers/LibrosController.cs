@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Description;
 using test2307.Entities;
 
 namespace test2307.Controllers
@@ -20,13 +21,14 @@ namespace test2307.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Libro>> Get(int id)
+        //[ResponseType(typeof(Libro))]
+        public async Task<ActionResult> Get(int id)
         {
             var existe = await context.Libro.AnyAsync(x => x.Id == id);
             if (!existe)
                 return NotFound($"El libro con id: {id} no existe.");
 
-            return await context.Libro.Include(x => x.Autor).FirstOrDefaultAsync(x => x.Id == id);
+            return Ok();// await context.Libro.Include(x => x.Autor).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         [HttpPost]

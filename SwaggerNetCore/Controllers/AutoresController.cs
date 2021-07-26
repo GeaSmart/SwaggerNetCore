@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Description;
 using test2307.Entities;
 
 namespace test2307.Controllers
@@ -22,8 +23,11 @@ namespace test2307.Controllers
         /// <summary>
         /// Este método trae todos los autores
         /// </summary>
-        /// <returns></returns>
-        [HttpGet]
+        /// <returns>Puros autores</returns>
+        /// <remarks>Este es un remark para información ampliada de autores de libros comunes y conocidos.</remarks>
+        /// <response code="200">Todo bien eh</response>
+        /// <response code="400">La liaste ah</response>        
+        [HttpGet]        
         public async Task<ActionResult<List<Autor>>> Get()
         {
             return await context.Autor.Include(x=>x.Libros).ToListAsync();

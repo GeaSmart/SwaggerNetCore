@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ihcFXlBtTundslktulWzOcQq+wsfFmqUbuQbjR/Q4dw3usu02/2dGPd8cPJeLNY9Hdf5EIm5RTkLknjzxi7pPA==",
+  "dgSpecHash": "TrZE23/X3PRAiHDjmjRx/ZC6z+r/lgFqwPk9yxS59heSkrVd/ieqR3K+yB0gyW5o6f7kYGckPWRu1+zvZ4IoQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gerson.Azabache\\source\\repos\\SwaggerNetCore\\SwaggerNetCore\\SwaggerNetCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
     "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.8\\microsoft.aspnetcore.jsonpatch.5.0.8.nupkg.sha512",
     "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.8\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.8.nupkg.sha512",
     "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -107,5 +109,16 @@
     "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Gerson.Azabache\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
