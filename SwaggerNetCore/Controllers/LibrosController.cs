@@ -21,14 +21,13 @@ namespace test2307.Controllers
         }
 
         [HttpGet("{id:int}")]
-        //[ResponseType(typeof(Libro))]
-        public async Task<ActionResult> Get(int id)
+        public async Task<ActionResult<Libro>> Get(int id)
         {
             var existe = await context.Libro.AnyAsync(x => x.Id == id);
             if (!existe)
                 return NotFound($"El libro con id: {id} no existe.");
 
-            return Ok();// await context.Libro.Include(x => x.Autor).FirstOrDefaultAsync(x => x.Id == id);
+            return await context.Libro.Include(x => x.Autor).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         [HttpPost]

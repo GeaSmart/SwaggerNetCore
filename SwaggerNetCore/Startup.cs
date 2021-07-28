@@ -47,7 +47,9 @@ namespace test2307
                 config.SwaggerDoc("v1",
                     new Microsoft.OpenApi.Models.OpenApiInfo() //Swashbuckle.AspNetCore.Swagger.info() se usa en versiones anteriores
                     {
-                        Title = "Ejemplo de swagger"
+                        Title = "Ejemplo de swagger",
+                        Version = "v1",
+                        Description = "Esta es una documentación de swagger, aquí tambien puede ir información necesaria para utilizar el Api, etc..."
                     }
                 );
                 config.IncludeXmlComments(xmlPath);

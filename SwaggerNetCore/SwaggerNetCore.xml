@@ -11,14 +11,20 @@
             <returns>Puros autores</returns>
             <remarks>Este es un remark para información ampliada de autores de libros comunes y conocidos.</remarks>
             <response code="200">Todo bien eh</response>
-            <response code="400">La liaste ah</response>        
+            <response code="400">La liaste ah</response>
         </member>
         <member name="M:test2307.Controllers.AutoresController.Post(test2307.Entities.Autor)">
             <summary>
             Este método inserta autores
             </summary>
             <param name="autor">Inserte autor</param>
-            <returns></returns>
+            <returns></returns>git
+            
+        </member>
+        <member name="P:test2307.Entities.Autor.Id">
+            <summary>
+            Este es el identificador de un autor
+            </summary>
         </member>
     </members>
 </doc>

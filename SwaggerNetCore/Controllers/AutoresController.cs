@@ -26,8 +26,8 @@ namespace test2307.Controllers
         /// <returns>Puros autores</returns>
         /// <remarks>Este es un remark para información ampliada de autores de libros comunes y conocidos.</remarks>
         /// <response code="200">Todo bien eh</response>
-        /// <response code="400">La liaste ah</response>        
-        [HttpGet]        
+        /// <response code="400">La liaste ah</response>
+        [HttpGet]
         public async Task<ActionResult<List<Autor>>> Get()
         {
             return await context.Autor.Include(x=>x.Libros).ToListAsync();
