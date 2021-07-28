@@ -37,7 +37,8 @@ namespace test2307.Controllers
         /// Este método inserta autores
         /// </summary>
         /// <param name="autor">Inserte autor</param>
-        /// <returns></returns>
+        /// <returns></returns>git
+        /// 
         [HttpPost]
         public async Task<ActionResult> Post(Autor autor)
         {            
